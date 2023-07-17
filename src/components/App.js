@@ -3,18 +3,18 @@ import React,{useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
-  let [a, setA] = useState("0");
+  let [count, setCount] = useState(0);
 
-  function bnt() {
-    setA(a+1)
-  }
+  // function bnt() {
+  //   setA(a+1)
+  // }
 
   return (
     <div>
         {/* Do not remove the main div */}
-        <p>Button clicked {a} times</p>
+        <p>Button clicked {count} times</p>
 
-        <button onClick = {btn}>Click me</button>
+        <button onClick = {() => setCount(count+1)}>Click me</button>
     </div>
   )
 }
