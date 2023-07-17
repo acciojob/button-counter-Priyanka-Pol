@@ -3,7 +3,8 @@ import React,{useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
-  let [a, setA] = useState(0)
+  let [a, setA] = useState("");
+
   function bnt() {
     setA(a+1)
   }
@@ -11,9 +12,9 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <h1>Button clickes {a} timesa</h1>
+        <h1>Button clicked {a} times</h1>
 
-        <button onClick = {btn}>Click Me</button>
+        <button onClick = {btn}>Click me</button>
     </div>
   )
 }
